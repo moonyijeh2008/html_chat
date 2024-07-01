@@ -1,0 +1,4 @@
+// gcc -o chat_server chat_server.c -lws2_32
+// gcc -o chat_client chat_client.c -lws2_32
+//  ./chat_server
+//  ./chat_client

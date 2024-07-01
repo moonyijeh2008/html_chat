@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Client</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+        #chat {
+            width: 50%;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            overflow-y: auto;
+            height: 300px;
+        }
+        #message-input {
+            width: 50%;
+            margin-top: 10px;
+            display: flex;
+        }
+        #message-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+        #message-input button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat Client</h1>
+    <input type="text" id="name" placeholder="Enter your name">
+    <input type="text" id="channel" placeholder="Enter channel name">
+    <button id="join-btn">Join Chat</button>
+
+    <div id="chat"></div>
+    <div id="message-input" style="display:none;">
+        <input type="text" id="message" placeholder="Enter your message">
+        <button id="send-btn">Send</button>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
